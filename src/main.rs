@@ -10,8 +10,8 @@ use tokio::{fs::File, io::AsyncWriteExt, sync::Mutex};
 
 type Result<T> = std::result::Result<T, Box<dyn Error + Send + Sync>>;
 
-const JSON: &str = include_str!("../assets/live_patch_version_2846214.json");
-const BASE: &str = r"http://etheria-static.xdcdn.com/cbt3/0.6/Android";
+const LIVE_PATCH_JSON: &str = include_str!("../assets/live_patch_version_2846214.json");
+const BASE_PATH: &str = r"http://etheria-static.xdcdn.com/cbt3/0.6/Android";
 
 #[derive(Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
@@ -37,7 +37,7 @@ struct Pak {
 
 #[derive(Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
-struct LivePatch {
+struct LivePatchJson {
     current_version: u64,
     patches: Vec<Pak>,
     base_paks: Vec<Pak>,
@@ -45,7 +45,7 @@ struct LivePatch {
 
 struct PakHelper {
     inner: Pak,
-    bar: ProgressBar,
+    pb: ProgressBar,
     path: String,
 }
 
@@ -58,38 +58,38 @@ impl Deref for PakHelper {
 }
 
 impl PakHelper {
-    const STYLE: &'static str = r"{spinner:.green} {item:40} [{elapsed_precise}] [{bar:40.cyan/blue}] {bytes}/{total_bytes}";
+    const STYLE: &'static str = r"{spinner:.green} {file_name:40} [{elapsed_precise}] [{bar:40.cyan/blue}] {bytes}/{total_bytes}";
 
-    pub fn new(inner: Pak, prefix: &str) -> Result<Self> {
+    fn new(inner: Pak, prefix: &str) -> Result<Self> {
         let Pak {
             patch_pak,
             pak_file_size,
             ..
         } = &inner;
 
-        let bar = ProgressBar::new(*pak_file_size);
+        let pb = ProgressBar::new(*pak_file_size);
         let path = format!("{prefix}/{patch_pak}");
 
-        let item = patch_pak.clone();
+        let file_name = patch_pak.clone();
 
-        bar.set_style(
+        pb.set_style(
             ProgressStyle::with_template(Self::STYLE)?
-                .with_key("item", move |_: &ProgressState, w: &mut dyn Write| {
-                    write!(w, "{item}").unwrap()
+                .with_key("file_name", move |_: &ProgressState, w: &mut dyn Write| {
+                    write!(w, "{file_name}").unwrap()
                 })
                 .progress_chars("##-"),
         );
 
-        Ok(Self { inner, bar, path })
+        Ok(Self { inner, pb, path })
     }
 
-    pub async fn download(&mut self) -> Result<()> {
+    async fn download(&mut self) -> Result<()> {
         while match self.verify() {
             Ok(downloaded) => !downloaded,
             Err(_) => true,
         } {
             let mut file = File::create(&self.path).await?;
-            let mut stream = reqwest::get(&format!("{BASE}/{}", self.patch_pak))
+            let mut stream = reqwest::get(&format!("{BASE_PATH}/{}", self.patch_pak))
                 .await?
                 .bytes_stream();
 
@@ -97,13 +97,13 @@ impl PakHelper {
                 let chunk = chunk?;
 
                 file.write_all(&chunk).await?;
-                self.bar.inc(chunk.len() as u64);
+                self.pb.inc(chunk.len() as u64);
             }
 
             file.flush().await?;
         }
 
-        Ok(self.bar.finish())
+        Ok(self.pb.finish())
     }
 
     fn verify(&self) -> Result<bool> {
@@ -121,9 +121,9 @@ impl PakHelper {
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    let LivePatch {
+    let LivePatchJson {
         patches, base_paks, ..
-    } = serde_json::from_str(JSON)?;
+    } = serde_json::from_str(LIVE_PATCH_JSON)?;
 
     fs::create_dir_all("PatchPaks")?;
     fs::create_dir_all("Paks")?;
@@ -136,7 +136,7 @@ async fn main() -> Result<()> {
         .map(|inner| PakHelper::new(inner, "Paks"));
 
     let threads = Arc::new(Mutex::new(num_cpus::get()));
-    let bars = MultiProgress::new();
+    let multi_progress = MultiProgress::new();
 
     let mut handles = vec![];
 
@@ -145,19 +145,17 @@ async fn main() -> Result<()> {
         let mut pak = pak?;
 
         while {
-            thread::sleep(Duration::from_millis(1));
             let mut threads = threads.lock().await;
 
-            match *threads {
-                0 => true,
-                _ => {
-                    *threads -= 1;
-                    false
-                }
-            }
-        } {}
+            threads.checked_sub(1).is_none_or(|t| {
+                *threads = t;
+                false
+            })
+        } {
+            thread::sleep(Duration::from_millis(1));
+        }
 
-        pak.bar = bars.add(pak.bar);
+        pak.pb = multi_progress.add(pak.pb);
 
         handles.push(tokio::spawn(async move {
             pak.download().await?;
@@ -181,7 +179,9 @@ mod tests {
 
     #[test]
     fn read_live_patch() -> Result<()> {
-        let live_patch = serde_json::to_string_pretty(&serde_json::from_str::<LivePatch>(JSON)?)?;
-        Ok(println!("{live_patch}"))
+        let live_patch_json = serde_json::from_str::<LivePatchJson>(LIVE_PATCH_JSON)?;
+        let live_patch_json = serde_json::to_string_pretty(&live_patch_json)?;
+
+        Ok(println!("{live_patch_json}"))
     }
 }

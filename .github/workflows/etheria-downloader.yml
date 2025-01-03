@@ -1,0 +1,31 @@
+name: Windows build
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build
+        run: |
+          cargo b -r
+          cp target/release/*.exe
+          get-filehash *.exe | foreach-object {
+            $_.hash.tolower(),$(split-path $_.path -leaf) -join '  '
+          } > sha256sums.txt
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            etheria-downloader.exe
+            sha256sums.txt
