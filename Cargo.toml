@@ -1,6 +1,6 @@
 [package]
 name = "etheria-downloader"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Alvin Null <supdrewin@outlook.com>"]
 edition = "2021"
 description = "Etheria Downloader written in Rust"

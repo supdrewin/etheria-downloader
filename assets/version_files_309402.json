@@ -1,0 +1,1502 @@
+{
+  "version": "0.8",
+  "displayVersion": "0.8.4(3114391)",
+  "command": {
+    "exe": "GameUE_cpp/Binaries/Win64/GameUE_cpp-Win64-Shipping.exe",
+    "params": "-IsLauncher -UserDir=GameSetting -channel=309402"
+  },
+  "asset": {
+    "current": "国际服正式版CBT1",
+    "assets": [{ "name": "国际服正式版CBT1", "value": "国际服正式版CBT1" }]
+  },
+  "files": {
+    "8335873431067f29df02bf9d13c44e64": {
+      "hash": "61f499a354381dc0a428a329c714dc1d",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/chrome_elf.dll",
+      "size": 558344,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/chrome_elf.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 558344
+    },
+    "44ac57afd7079e4d11d2b3dc096c77a8": {
+      "hash": "1c9b45e87528b8bb8cfa884ea0099a85",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/d3dcompiler_43.dll",
+      "size": 2106216,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/d3dcompiler_43.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 2106216
+    },
+    "98f07a7004c2b1cd6d8615ddfbe68ee1": {
+      "hash": "a7675ddea31dbacd14cc6e9199f7641f",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/d3dcompiler_47.dll",
+      "size": 4488904,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/d3dcompiler_47.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 4488904
+    },
+    "4ec992f8eaedc8e0e9e8549412f205c3": {
+      "hash": "bc7f54e4df91c9137dced27976228b66",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/icudtl.dat",
+      "size": 10130560,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/icudtl.dat",
+      "isDownloaded": 0,
+      "downloadedSize": 10130560
+    },
+    "88d87d7133471bb95b6f6899c0844c14": {
+      "hash": "c7f1b5591fa4c6e34273d9b513901eeb",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/libcef.dll",
+      "size": 98285832,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/libcef.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 98285832
+    },
+    "83722aef9403cc82f59f5049b575d428": {
+      "hash": "8d60d1a39bf9862c522a617da20d32cd",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/libEGL.dll",
+      "size": 103176,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/libEGL.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 103176
+    },
+    "2b3b4463d48aa348bf3e12640fdef006": {
+      "hash": "c35fd6a40de6363e3bb010623e245fca",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/libGLESv2.dll",
+      "size": 3932936,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/libGLESv2.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 3932936
+    },
+    "3db62a682296c251fc6760c8bb41608d": {
+      "hash": "94855c31f6c24656a6d67ceae0b04cca",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/natives_blob.bin",
+      "size": 246209,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/natives_blob.bin",
+      "isDownloaded": 0,
+      "downloadedSize": 246209
+    },
+    "40ea47029940227b3cbf7424360ffd0a": {
+      "hash": "dfb3f71057e263620565783f9f676fb4",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/snapshot_blob.bin",
+      "size": 1562112,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/snapshot_blob.bin",
+      "isDownloaded": 0,
+      "downloadedSize": 1562112
+    },
+    "aef843ce71a9242d7c750cf3db3c1e63": {
+      "hash": "1a909a4e490c1121c0e01c94be4d8c77",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/cef.pak",
+      "size": 6003861,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/cef.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 6003861
+    },
+    "7f39d0b4ffa16a100ac9cf370b84d417": {
+      "hash": "353041a41d9da52ffefcc37c89dbb83b",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/cef_100_percent.pak",
+      "size": 279905,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/cef_100_percent.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 279905
+    },
+    "6472a14ac91b144dff670e6751208a7a": {
+      "hash": "78cf51888cf52a0f6131e948b2385c62",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/cef_200_percent.pak",
+      "size": 386884,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/cef_200_percent.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 386884
+    },
+    "9fd2bfb39a10d5bef3909b5d6f85710a": {
+      "hash": "03e4b627d65ccca6b810b99ef86dc88f",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/cef_extensions.pak",
+      "size": 3565138,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/cef_extensions.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 3565138
+    },
+    "74a124bb6a3ea53510387879b8b3bf46": {
+      "hash": "75885f20b96687eb1a91905da87397dd",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/devtools_resources.pak",
+      "size": 5183550,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/devtools_resources.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 5183550
+    },
+    "5d543fb511f1e4c14b5f2907c86d78df": {
+      "hash": "df0db5ceaee6af95c163b3bd22efabc4",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/am.pak",
+      "size": 317735,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/am.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 317735
+    },
+    "5a721a9f493454bc38c160c07b51dc7f": {
+      "hash": "22299027a8a31c24a2f667f218163621",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/ar.pak",
+      "size": 314031,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/ar.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 314031
+    },
+    "5d09224dca229ae160d6b08dbd01a1ef": {
+      "hash": "f6d256329b24a73d131a442fe1bdcd05",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/bg.pak",
+      "size": 366595,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/bg.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 366595
+    },
+    "362ce8e64c3baf2f2108d3dd71637bac": {
+      "hash": "37b37cdc6136fc8a0f5232bcaae9443e",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/bn.pak",
+      "size": 478939,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/bn.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 478939
+    },
+    "3ef3cc04486b7b9e75a3cd2338125df4": {
+      "hash": "98c2430f86321e05ffa21fb5de8e0823",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/ca.pak",
+      "size": 228122,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/ca.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 228122
+    },
+    "5d93749317a680446e3fc6d1d06d4854": {
+      "hash": "ba68d98c5741feea3a2a8b3062e6b33c",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/cs.pak",
+      "size": 231572,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/cs.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 231572
+    },
+    "bb26d3873ffed67308c19c86c9596264": {
+      "hash": "62593b1c724fa2f7909683676e517ee5",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/da.pak",
+      "size": 207739,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/da.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 207739
+    },
+    "b40f102dcd3f7368ea55801fc9364414": {
+      "hash": "87f8df5088cf2e324e0b50a788e41b1e",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/de.pak",
+      "size": 226211,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/de.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 226211
+    },
+    "c0d8e18302b9c62c783d4fccf0cc5ae7": {
+      "hash": "37f2d16ff1e6423fe6c93bb5f3704f78",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/el.pak",
+      "size": 402687,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/el.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 402687
+    },
+    "9d8fc0a6979e8800d2e8bf4b94c11a67": {
+      "hash": "af1aee16186d1f5b808fea62788ba65b",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/en-GB.pak",
+      "size": 186958,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/en-GB.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 186958
+    },
+    "dd529a130593f45eaab6609f4807bb71": {
+      "hash": "32a7083e4afed6cbdd87489bf00fb72e",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/en-US.pak",
+      "size": 186991,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/en-US.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 186991
+    },
+    "7e175a2a265be891297755267fbcf657": {
+      "hash": "3a5e07e83ab696325194fda667f40adb",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/es-419.pak",
+      "size": 224532,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/es-419.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 224532
+    },
+    "c44b5e6c56e9df26385844eff4d1621a": {
+      "hash": "9a6a00edf4f4aebe264335d32dfbdd5a",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/es.pak",
+      "size": 228808,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/es.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 228808
+    },
+    "f6e80d8b10dd5f15ec92d4a408e3b2e7": {
+      "hash": "b706ebcee9553e038b82479edccf4165",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/et.pak",
+      "size": 202214,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/et.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 202214
+    },
+    "b81610e06efb78f4951b32a8989d95a7": {
+      "hash": "d208ba29eb26f7325f7f055b4e6f3ba0",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/fa.pak",
+      "size": 321134,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/fa.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 321134
+    },
+    "67c8526519eb168110f8aa85ad47cd05": {
+      "hash": "cd2443564cb7216f3a52578c76e83c80",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/fi.pak",
+      "size": 211980,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/fi.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 211980
+    },
+    "d2b8d75c56df0b572520cb839c6e7394": {
+      "hash": "ecdd6b5ebe2bd4c7e40a637ebc00f363",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/fil.pak",
+      "size": 232070,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/fil.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 232070
+    },
+    "d93ab46dd8d142ccea70d8250cb65bad": {
+      "hash": "a0fb5f9fa4237ffcd73fb9a0b75df93f",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/fr.pak",
+      "size": 243625,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/fr.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 243625
+    },
+    "2f42d932dd19dc75ff7b8e960bf56844": {
+      "hash": "af47fe7576ef7f957a3dad4c2dbee25e",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/gu.pak",
+      "size": 451818,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/gu.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 451818
+    },
+    "bc3b21e4b4f1a47bcb533b4b0a015e01": {
+      "hash": "9b57b3e79446429691b04c848443ec1f",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/he.pak",
+      "size": 265463,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/he.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 265463
+    },
+    "0a39472151bc5639c9761b88b7631ea6": {
+      "hash": "48dcfd6dbb6054b00f2eaaa98eb2854d",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/hi.pak",
+      "size": 460810,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/hi.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 460810
+    },
+    "b10f26fbdc428b778b54df5f81fd747a": {
+      "hash": "7803ed6631f55e56209a5a82e2c63e9e",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/hr.pak",
+      "size": 217428,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/hr.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 217428
+    },
+    "cc99dfcbbf42169401c8ab5e2f1192b3": {
+      "hash": "fe1a0fdb4f2102b21306ab175ad07d74",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/hu.pak",
+      "size": 239083,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/hu.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 239083
+    },
+    "500bd319c4251e715de4ef5211bfffba": {
+      "hash": "4b8cbfcd0cc3cbd95b46ff927e17d3cc",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/id.pak",
+      "size": 201977,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/id.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 201977
+    },
+    "82a2a8b042588602648b804242551976": {
+      "hash": "814924c80224d39186d32d876c38a930",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/it.pak",
+      "size": 220397,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/it.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 220397
+    },
+    "78ebca61e475422a3837295a69734db5": {
+      "hash": "49158449aedda1f3b020b5557ac0cf9a",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/ja.pak",
+      "size": 270807,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/ja.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 270807
+    },
+    "e1488b747c87099e7177729fc08c8fe0": {
+      "hash": "8bff968d6f06d429759675eb278fee83",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/kn.pak",
+      "size": 519415,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/kn.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 519415
+    },
+    "e84b10c7a29f377dcb3ae72cc0bcf6dd": {
+      "hash": "0a73db278ddb5abcbe43ad4066bf239b",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/ko.pak",
+      "size": 230850,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/ko.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 230850
+    },
+    "4b437675bf2d0932bf05af9ab719e4a1": {
+      "hash": "4a8f1111461833ba54bbf9a2c06d4896",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/lt.pak",
+      "size": 234416,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/lt.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 234416
+    },
+    "01fe64cf3541f8cbd6e049de6e74f4b9": {
+      "hash": "7c763171bdde1a6a8358180ed585034e",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/lv.pak",
+      "size": 234204,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/lv.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 234204
+    },
+    "bbc2b7686667c7cabfff97a357431e54": {
+      "hash": "02809db4176d1a0819562a0c9707b893",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/ml.pak",
+      "size": 567612,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/ml.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 567612
+    },
+    "adde3e2735311514c4866c05aae07cd0": {
+      "hash": "ce0b8d9a5d379aeef89f4755e283a273",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/mr.pak",
+      "size": 456368,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/mr.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 456368
+    },
+    "67dab6cf99afd78ebc7302c5ff287d8a": {
+      "hash": "96477cd1228bb45f0597c079492fdace",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/ms.pak",
+      "size": 208619,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/ms.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 208619
+    },
+    "7e6ed2b1c2469e51cfe1ab86babcbbc5": {
+      "hash": "06b059219b57a339f6f324b2ca16ed78",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/nb.pak",
+      "size": 205047,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/nb.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 205047
+    },
+    "dcfc99a889138dd79c3ad8f4e3ad9066": {
+      "hash": "b199dfcb09fbbc226c07b4091d654669",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/nl.pak",
+      "size": 215699,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/nl.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 215699
+    },
+    "87d5b683bb88e05730a9a13c6d6cd4a7": {
+      "hash": "9d831f342acb5ec998ba9a7368239759",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/pl.pak",
+      "size": 225555,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/pl.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 225555
+    },
+    "b3f051bab4cbebb887726a16a0df5e0e": {
+      "hash": "6d7bca559226543213e0bb122efd95d6",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/pt-BR.pak",
+      "size": 221133,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/pt-BR.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 221133
+    },
+    "a79ca1b78dd4c3028ce826c22d1a25c3": {
+      "hash": "fa370bc586055c3f9c518af9d0070e5c",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/pt-PT.pak",
+      "size": 223472,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/pt-PT.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 223472
+    },
+    "63cd5e095e112f9443d471eadfd63a3b": {
+      "hash": "00199374b56500de5d89bcb1eaf9bca0",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/ro.pak",
+      "size": 229091,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/ro.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 229091
+    },
+    "2c4dc32a02722c45690e2e6225d16e29": {
+      "hash": "531b7ab45701c376fbb35d09b641c386",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/ru.pak",
+      "size": 351003,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/ru.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 351003
+    },
+    "8e32ffc0b77000d78c096d84416aaf87": {
+      "hash": "36fd894c0d958c754b5544754cb74af8",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/sk.pak",
+      "size": 237218,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/sk.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 237218
+    },
+    "a35f81df85dcfbdd3b0c55f5e78e8015": {
+      "hash": "aa47507900c5c6a12074e6b928f8f5eb",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/sl.pak",
+      "size": 217919,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/sl.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 217919
+    },
+    "6d38e860f975deec84b802878588e431": {
+      "hash": "f87c694d5d45e2fce3640d7f10d58f1f",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/sr.pak",
+      "size": 341731,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/sr.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 341731
+    },
+    "93f1412d1766a22998cc37bcc9881bd3": {
+      "hash": "536462c950527c7a68b4bdca15feaed9",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/sv.pak",
+      "size": 206145,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/sv.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 206145
+    },
+    "e194e66ef1f642df827a2fdbd1d662cb": {
+      "hash": "c55b06f4e9b461803bb768a6ffa9100a",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/sw.pak",
+      "size": 209319,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/sw.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 209319
+    },
+    "31732058f04bd9c3c2cddc41c724f8cf": {
+      "hash": "5885c004fc8bb9a138f5ebdaf2601b2f",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/ta.pak",
+      "size": 527387,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/ta.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 527387
+    },
+    "4f8c1ee75002e01d0d81e55e75a84d67": {
+      "hash": "95479ec9ff43dae880acae39f8c9b710",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/te.pak",
+      "size": 503299,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/te.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 503299
+    },
+    "ca9fb1641f8bbc75ab21ade1907a8d1b": {
+      "hash": "841f0db1bd81e44ee9825d1d56d34d8a",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/th.pak",
+      "size": 438108,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/th.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 438108
+    },
+    "ae9219c445591ce54d3d270f5771ddb2": {
+      "hash": "050b25ecc7718e55e3fcec5a7b239d7d",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/tr.pak",
+      "size": 221774,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/tr.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 221774
+    },
+    "b9bcd80a832b138209d1088de427704e": {
+      "hash": "3fc1f166ec7c2efa83ef153ad584b78f",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/uk.pak",
+      "size": 358245,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/uk.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 358245
+    },
+    "e7ab21e2784313e7a04b23bb4f248fc7": {
+      "hash": "fd23fb189a14b3f9e5dc25d84d6af873",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/vi.pak",
+      "size": 254300,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/vi.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 254300
+    },
+    "aa91ad712ed3171b037beff10fdae0fb": {
+      "hash": "889d29f0d68c8bab9ebf2c7426f3613a",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/zh-CN.pak",
+      "size": 190714,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/zh-CN.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 190714
+    },
+    "a95eb39a00e9909f7c4c96b7179b3bdf": {
+      "hash": "59cb5352e750cb44a07eae223f30c3c9",
+      "path": "Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/zh-TW.pak",
+      "size": 192079,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/CEF3/Win64/Resources/locales/zh-TW.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 192079
+    },
+    "a4a0a058bd4878efd2a04d7d3c79b48b": {
+      "hash": "a970b7fcc13c18a1998cf65a5b8cb699",
+      "path": "Engine/Binaries/ThirdParty/DbgHelp/dbghelp.dll",
+      "size": 1868736,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/DbgHelp/dbghelp.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 1868736
+    },
+    "9d7b43e72b5bc4c148a284b9aa90758d": {
+      "hash": "aa53a71cd35ad541dbab7999fb66a22e",
+      "path": "Engine/Binaries/ThirdParty/NVIDIA/NVaftermath/Win64/GFSDK_Aftermath_Lib.x64.dll",
+      "size": 128264,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/NVIDIA/NVaftermath/Win64/GFSDK_Aftermath_Lib.x64.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 128264
+    },
+    "ae1e589d55af31eff9108ca5f021d054": {
+      "hash": "7940e4322f241485dc4e5f91b3d3478b",
+      "path": "Engine/Binaries/ThirdParty/Ogg/Win64/VS2015/libogg_64.dll",
+      "size": 59656,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/Ogg/Win64/VS2015/libogg_64.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 59656
+    },
+    "22ce92fb7c3610276a2662305649b0fb": {
+      "hash": "fdcf0c315a2f50043d134e18e9a1361c",
+      "path": "Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/ApexFramework_x64.dll",
+      "size": 1054472,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/ApexFramework_x64.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 1054472
+    },
+    "d1ba33229a56cee80245b9b400be9516": {
+      "hash": "1842961d5b0becc30387317ae66651a7",
+      "path": "Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/APEX_Clothing_x64.dll",
+      "size": 1229576,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/APEX_Clothing_x64.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 1229576
+    },
+    "8f3abe28cc39b29078c41314bd46cbc9": {
+      "hash": "f77ae6df3ef445e519960015ea6a990c",
+      "path": "Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/APEX_Destructible_x64.dll",
+      "size": 2020104,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/APEX_Destructible_x64.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 2020104
+    },
+    "09fca64b0008c1e97ebd42a26856ceb4": {
+      "hash": "a0b5e1ee6ad95339d8848ecd808cb842",
+      "path": "Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/APEX_Legacy_x64.dll",
+      "size": 3340040,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/APEX_Legacy_x64.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 3340040
+    },
+    "9d4c651d043449f1309a62c74dbbab84": {
+      "hash": "16a6b15b5beabe6216da3863c0f74593",
+      "path": "Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/NvCloth_x64.dll",
+      "size": 276232,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/NvCloth_x64.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 276232
+    },
+    "3bfa5b1721d7c72a7e300a8caeda1de2": {
+      "hash": "993e9d728c07e96425852f712277c6cc",
+      "path": "Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/PhysX3Common_x64.dll",
+      "size": 1609480,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/PhysX3Common_x64.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 1609480
+    },
+    "c3950525c862077f3971036977f7f4a2": {
+      "hash": "593405dcee59ecb73cf29183212c51e5",
+      "path": "Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/PhysX3Cooking_x64.dll",
+      "size": 255240,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/PhysX3Cooking_x64.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 255240
+    },
+    "65f758c8aa8a46be6150028db159d34c": {
+      "hash": "85019bbced99b86a38fc6792c2987fa6",
+      "path": "Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/PhysX3_x64.dll",
+      "size": 2115848,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/PhysX3_x64.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 2115848
+    },
+    "a46da8b6e2bce0d2abc35f9dc6656b18": {
+      "hash": "cd16bbc57550ca9013943779c954043e",
+      "path": "Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/PxFoundation_x64.dll",
+      "size": 65288,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/PxFoundation_x64.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 65288
+    },
+    "56bda2a368d5c15ee6204429285fb18f": {
+      "hash": "460cfef43fa18df25096dedea4818650",
+      "path": "Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/PxPvdSDK_x64.dll",
+      "size": 199432,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/PxPvdSDK_x64.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 199432
+    },
+    "a66f4bc08f320617f160b9b99ebd087f": {
+      "hash": "569058242cd5478ecc840467211d1396",
+      "path": "Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbisfile_64.dll",
+      "size": 48392,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbisfile_64.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 48392
+    },
+    "6338dcd08eba715c83e32b83a22968f5": {
+      "hash": "e1a364a07a1a518ac01b640013ce946c",
+      "path": "Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbis_64.dll",
+      "size": 1724680,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbis_64.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 1724680
+    },
+    "6cd39f873ace093c264b1387c71cd6ca": {
+      "hash": "835591acabfb69a6f9dace12711f2243",
+      "path": "Engine/Binaries/ThirdParty/Windows/XAudio2_9/x64/xaudio2_9redist.dll",
+      "size": 847440,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/ThirdParty/Windows/XAudio2_9/x64/xaudio2_9redist.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 847440
+    },
+    "a87c7910c83223400df19e1daa69fc29": {
+      "hash": "b1d08c61a9941e91c3e551a0bc392967",
+      "path": "Engine/Binaries/Win64/UnrealCEFSubProcess.exe",
+      "size": 3704072,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Binaries/Win64/UnrealCEFSubProcess.exe",
+      "isDownloaded": 0,
+      "downloadedSize": 3704072
+    },
+    "0986bc54b178ffd79fa15e047dc4fe02": {
+      "hash": "a688d249c498d4d3b89ed876c8239520",
+      "path": "Engine/Extras/Redist/en-us/UE4PrereqSetup_x64.exe",
+      "size": 41033784,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Extras/Redist/en-us/UE4PrereqSetup_x64.exe",
+      "isDownloaded": 0,
+      "downloadedSize": 41033784
+    },
+    "aac1713ffb30bf854233159fc3f3c9c3": {
+      "hash": "50cc20b35e917efef8561e9e06a5b8c6",
+      "path": "Engine/Plugins/Experimental/BlastPlugin/Binaries/Win64/NvBlastExtAuthoring_x64.dll",
+      "size": 1046280,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Plugins/Experimental/BlastPlugin/Binaries/Win64/NvBlastExtAuthoring_x64.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 1046280
+    },
+    "2cec7f1646525a1853ca5bc1b77affa5": {
+      "hash": "31cbfd6318c30f0f34bae035effc839a",
+      "path": "Engine/Plugins/Experimental/BlastPlugin/Binaries/Win64/NvBlastGlobals_x64.dll",
+      "size": 23816,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Plugins/Experimental/BlastPlugin/Binaries/Win64/NvBlastGlobals_x64.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 23816
+    },
+    "f6cdd8164fb5cf0ee635782c469c98fa": {
+      "hash": "f0a78a4988bd8c6fcd2632810266c364",
+      "path": "Engine/Plugins/Experimental/BlastPlugin/Binaries/Win64/NvBlast_x64.dll",
+      "size": 77064,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/Engine/Plugins/Experimental/BlastPlugin/Binaries/Win64/NvBlast_x64.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 77064
+    },
+    "dcc056c338fa47af2cc4648c6fe8357f": {
+      "hash": "2c146bc8d73b8944f35506241b9953a9",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-console-l1-1-0.dll",
+      "size": 21032,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-console-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 21032
+    },
+    "18f27075939b118b01926420d7c8f1d5": {
+      "hash": "7a55e51d07e1f15221eb11479adbc53f",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-console-l1-2-0.dll",
+      "size": 21024,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-console-l1-2-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 21024
+    },
+    "2d0c915936a0a340d1d4df70398fe39c": {
+      "hash": "f0c9c56f56ffa3adc548173569dbd793",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-datetime-l1-1-0.dll",
+      "size": 20512,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-datetime-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 20512
+    },
+    "d9205af765e345637dfdaa9edbb525f9": {
+      "hash": "02d669afdabfe420598041b848b71158",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-debug-l1-1-0.dll",
+      "size": 20544,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-debug-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 20544
+    },
+    "870428012711ed0f3ac28668e2b0fa9c": {
+      "hash": "944a33d971704ff815a6c90733d0a72e",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-errorhandling-l1-1-0.dll",
+      "size": 20520,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-errorhandling-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 20520
+    },
+    "79f29c196930493f921181285d5bc04d": {
+      "hash": "fec01082bccddadad0814f30b43ab078",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-file-l1-1-0.dll",
+      "size": 24104,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-file-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 24104
+    },
+    "489f7f9eb90795027e7611519a15d192": {
+      "hash": "b5060343583e6be3b3de33ccd40398e0",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-file-l1-2-0.dll",
+      "size": 20520,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-file-l1-2-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 20520
+    },
+    "18bfd023e381d8c93a8f5d33f8f24b47": {
+      "hash": "2e8995e2320e313545c3ddb5c71dc232",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-file-l2-1-0.dll",
+      "size": 20520,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-file-l2-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 20520
+    },
+    "00edfafd9dca352cfad431cb83d0210f": {
+      "hash": "31ffff2c6539b3d2f575500300b93d6b",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-handle-l1-1-0.dll",
+      "size": 20520,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-handle-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 20520
+    },
+    "bcb4aedf7579a3d86435a0e8cbb0f5ba": {
+      "hash": "c7120579bb8f56f8cd4e0d329ece3e9d",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-heap-l1-1-0.dll",
+      "size": 21032,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-heap-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 21032
+    },
+    "9c6fe93cb58a6290b1cd3d152c8fc4fc": {
+      "hash": "1144ced0d8198c39f62fc71c1ecf6cb1",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-interlocked-l1-1-0.dll",
+      "size": 20520,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-interlocked-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 20520
+    },
+    "ff56f5edb574daad3bca39d56aa65f4e": {
+      "hash": "2acf6db396a86e2bef9d6ddf6919581f",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-libraryloader-l1-1-0.dll",
+      "size": 21568,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-libraryloader-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 21568
+    },
+    "e012fe92cdfa4b48ac3925a968f935c4": {
+      "hash": "54d2f426bc91ecf321908d133b069b20",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-localization-l1-2-0.dll",
+      "size": 23080,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-localization-l1-2-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 23080
+    },
+    "c7d42bb8384ba748c08b3d116743e7e4": {
+      "hash": "e7b662ffa023b7f07a85ac3fb8910c11",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-memory-l1-1-0.dll",
+      "size": 21032,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-memory-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 21032
+    },
+    "8c40ac750545a3878deef1ccd5bbdbb8": {
+      "hash": "da29d8d5a978e12d07f930f402e14180",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-namedpipe-l1-1-0.dll",
+      "size": 20520,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-namedpipe-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 20520
+    },
+    "f3052d3d9e5a5e63c9ef13251cc3fe43": {
+      "hash": "d67863ab55ef2a9d195870c360ceaeb4",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-processenvironment-l1-1-0.dll",
+      "size": 21544,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-processenvironment-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 21544
+    },
+    "b9dffe3469448e26cfe02f263a2c6d05": {
+      "hash": "d5fc4afae80dc3abf97b716416bc2952",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-processthreads-l1-1-0.dll",
+      "size": 22560,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-processthreads-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 22560
+    },
+    "440816d2017dd322a3075faa6fb9b756": {
+      "hash": "d1b3cc23127884d9eff1940f5b98e7aa",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-processthreads-l1-1-1.dll",
+      "size": 21056,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-processthreads-l1-1-1.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 21056
+    },
+    "a0fd87ab06ad2c4ce3704c4c04d38a6c": {
+      "hash": "2e19bdbf51d8caf97b2bcb886fdc5b2d",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-profile-l1-1-0.dll",
+      "size": 20008,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-profile-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 20008
+    },
+    "30c0aed8c6533dacb7275f6aeb6f6c76": {
+      "hash": "e8789ec050c879b856f1f13b9cee6f3a",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-rtlsupport-l1-1-0.dll",
+      "size": 21056,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-rtlsupport-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 21056
+    },
+    "6c9d4668776e8494fdb963f78fa96be3": {
+      "hash": "a92e0c30499a3be2b4166adafd86d0f4",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-string-l1-1-0.dll",
+      "size": 20520,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-string-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 20520
+    },
+    "0bfae090a6558e48f2bd8a704564c427": {
+      "hash": "393ced54d952c843ac9e16354bff642b",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-synch-l1-1-0.dll",
+      "size": 22568,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-synch-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 22568
+    },
+    "24172fa6b083463920bac40215d69cc3": {
+      "hash": "dac3e271ef4a287821becda51aa12946",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-synch-l1-2-0.dll",
+      "size": 21032,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-synch-l1-2-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 21032
+    },
+    "449b02a71779d330892cccccf4a0e6a2": {
+      "hash": "eb3aeb684858b00bc6a90f68e8df5484",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-sysinfo-l1-1-0.dll",
+      "size": 21544,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-sysinfo-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 21544
+    },
+    "d6d0162e4266b0cdd8901e8bd578b4ff": {
+      "hash": "36165a5050672b7b0e04cb1f3d7b1b8f",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-timezone-l1-1-0.dll",
+      "size": 21032,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-timezone-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 21032
+    },
+    "6f2cd8b9d9c5fa523e0409348b441992": {
+      "hash": "4fc1d0fdb7b881793ded358f1880bc16",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-core-util-l1-1-0.dll",
+      "size": 20520,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-core-util-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 20520
+    },
+    "46ae3256dc9321e0c8b32b7e0deccd76": {
+      "hash": "75e626c3ebf160ebe75c59d3d6ac3739",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-crt-conio-l1-1-0.dll",
+      "size": 21544,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-crt-conio-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 21544
+    },
+    "7b6b0c050f3b009aab677b6ac36f8e7c": {
+      "hash": "0485c463cd8d2ae1cbd42df6f0591246",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-crt-convert-l1-1-0.dll",
+      "size": 24616,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-crt-convert-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 24616
+    },
+    "1ddc3443cdaea227797623dfffd02f02": {
+      "hash": "e48a1860000fd2bd61566e76093984f5",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-crt-environment-l1-1-0.dll",
+      "size": 21032,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-crt-environment-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 21032
+    },
+    "f76bf051d9e91e4a90089767a12f1df7": {
+      "hash": "1193f810519fbc07beb3ffbad3247fc4",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-crt-filesystem-l1-1-0.dll",
+      "size": 22568,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-crt-filesystem-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 22568
+    },
+    "87f47ce1745224f5c4c75cdb29a7d809": {
+      "hash": "a22f9a4cbd701209842b204895fedf37",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-crt-heap-l1-1-0.dll",
+      "size": 21544,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-crt-heap-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 21544
+    },
+    "f89656515dbc7d170166754cb30d213b": {
+      "hash": "ba17b278fff2c18e34e47562ddde8166",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-crt-locale-l1-1-0.dll",
+      "size": 21032,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-crt-locale-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 21032
+    },
+    "a5905c4c030a4b9c41a0805c135e5685": {
+      "hash": "c4cac2d609bb5e0da9017ebb535634ce",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-crt-math-l1-1-0.dll",
+      "size": 29528,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-crt-math-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 29528
+    },
+    "38de89d71a0e22046fbe5cd24ce8c544": {
+      "hash": "0d19e7c415f72971239ca241fd960810",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-crt-multibyte-l1-1-0.dll",
+      "size": 28736,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-crt-multibyte-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 28736
+    },
+    "1ffae4deb94c5da8861104734a095e2a": {
+      "hash": "c3878d148f6a494270738022e8bcd025",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-crt-private-l1-1-0.dll",
+      "size": 73048,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-crt-private-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 73048
+    },
+    "60320deb592b69157bb46e313eef2778": {
+      "hash": "d8a5c1960281ec59fd4164c983516d7c",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-crt-process-l1-1-0.dll",
+      "size": 21568,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-crt-process-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 21568
+    },
+    "6f0ad30c1efea61e55a0842e4d38e33f": {
+      "hash": "dbd23405e7baa8e1ac763fa506021122",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-crt-runtime-l1-1-0.dll",
+      "size": 25128,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-crt-runtime-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 25128
+    },
+    "d4c1fe35533f9fa703bbee1c00a0df5d": {
+      "hash": "5df2410c0afd30c9a11de50de4798089",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-crt-stdio-l1-1-0.dll",
+      "size": 26664,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-crt-stdio-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 26664
+    },
+    "4af474287d36a805a9855927f6a19143": {
+      "hash": "aacade02d7aaf6b5eff26a0e3a11c42d",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-crt-string-l1-1-0.dll",
+      "size": 26664,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-crt-string-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 26664
+    },
+    "f1fcfd0349161b9aa7f7a50f82a2ad8d": {
+      "hash": "0d9afb006f46478008c180b9da5465ac",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-crt-time-l1-1-0.dll",
+      "size": 23080,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-crt-time-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 23080
+    },
+    "8e74ee454d4791a59c68ed0498323aef": {
+      "hash": "9b622ca5388b6400705c8f21550bae8e",
+      "path": "GameUE_cpp/Binaries/Win64/api-ms-win-crt-utility-l1-1-0.dll",
+      "size": 21032,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/api-ms-win-crt-utility-l1-1-0.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 21032
+    },
+    "66f70cbdf8eaac05f034e41b13b482ce": {
+      "hash": "eb42b164d603672e07997019bb00e4ad",
+      "path": "GameUE_cpp/Binaries/Win64/concrt140.dll",
+      "size": 333592,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/concrt140.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 333592
+    },
+    "43db18076b019fc33a553e9f2d22c571": {
+      "hash": "5740f4f303c450ad1eedc666e93f5236",
+      "path": "GameUE_cpp/Binaries/Win64/GameUE_cpp-Win64-Shipping.exe",
+      "size": 118143752,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/GameUE_cpp-Win64-Shipping.exe",
+      "isDownloaded": 0,
+      "downloadedSize": 118143752
+    },
+    "558d4cd6218901011a985f11a10fd6cd": {
+      "hash": "a1d30ef2114e18e26e2bb96555be81bf",
+      "path": "GameUE_cpp/Binaries/Win64/msvcp140.dll",
+      "size": 618264,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/msvcp140.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 618264
+    },
+    "c1ea84043b7b0abca4cc8a2818b39c78": {
+      "hash": "a0b595f95be9cce12bff7ef199f874c4",
+      "path": "GameUE_cpp/Binaries/Win64/msvcp140_1.dll",
+      "size": 31512,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/msvcp140_1.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 31512
+    },
+    "c7c05e9ffe812e8e9b7a6de0b940aeb9": {
+      "hash": "bbcf50b71928edb1c32c969d0533753c",
+      "path": "GameUE_cpp/Binaries/Win64/msvcp140_2.dll",
+      "size": 203544,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/msvcp140_2.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 203544
+    },
+    "33933ac0570d573b0eafd6b60d402131": {
+      "hash": "e42f86965ceb093d95b9c93bd87b179d",
+      "path": "GameUE_cpp/Binaries/Win64/msvcp140_codecvt_ids.dll",
+      "size": 27416,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/msvcp140_codecvt_ids.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 27416
+    },
+    "72273f348ca28bfce512dfb24c49f35f": {
+      "hash": "a62e5be0688d3dabfa8d5b797b5f9648",
+      "path": "GameUE_cpp/Binaries/Win64/turbojpeg.dll",
+      "size": 736248,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/turbojpeg.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 736248
+    },
+    "daa27835c173847eb4cf26abf1a5599d": {
+      "hash": "298e85be72551d0cdd9ed650587cfdc6",
+      "path": "GameUE_cpp/Binaries/Win64/ucrtbase.dll",
+      "size": 1026088,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/ucrtbase.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 1026088
+    },
+    "d9ab1fd96b78fd1afe91987fede53fe9": {
+      "hash": "ddd9457ef184cc3897b8198d262f4339",
+      "path": "GameUE_cpp/Binaries/Win64/vccorlib140.dll",
+      "size": 366360,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/vccorlib140.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 366360
+    },
+    "67c57ff81924aeb7037f6f5d5471d60b": {
+      "hash": "23105a395b807d9335219958b4d0cec1",
+      "path": "GameUE_cpp/Binaries/Win64/vcruntime140.dll",
+      "size": 89880,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/vcruntime140.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 89880
+    },
+    "3bdfc343a9d4e3bb676a13c7a9b31abc": {
+      "hash": "9040ed0fdf4ce7558cbffb73d4c17761",
+      "path": "GameUE_cpp/Binaries/Win64/vcruntime140_1.dll",
+      "size": 44312,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/vcruntime140_1.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 44312
+    },
+    "d947d0e261d7c9a04e90db51bc3e69dd": {
+      "hash": "b4ff2a39685c1a6d43f0e56eb350af3a",
+      "path": "GameUE_cpp/Binaries/Win64/X3DAudio1_7.dll",
+      "size": 24920,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/X3DAudio1_7.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 24920
+    },
+    "dbf27de6c2b470811357061091112f27": {
+      "hash": "e9739ae8b2fa28dcd6f2ef5525da8827",
+      "path": "GameUE_cpp/Binaries/Win64/XAPOFX1_5.dll",
+      "size": 77656,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/XAPOFX1_5.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 77656
+    },
+    "006dd8025e3cd42675816a8b16959787": {
+      "hash": "4f7513ff4de6303088db28dcbcef372c",
+      "path": "GameUE_cpp/Binaries/Win64/XAudio2_7.dll",
+      "size": 518488,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/XAudio2_7.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 518488
+    },
+    "da508d1fc61c061b26d15949c1b57f1a": {
+      "hash": "bfb3091b167550ec6e6454813d3db244",
+      "path": "GameUE_cpp/Binaries/Win64/xinput1_3.dll",
+      "size": 107368,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Binaries/Win64/xinput1_3.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 107368
+    },
+    "535ee771a602a941d6c02eaabb952413": {
+      "hash": "933454c1c3ea19497dd06a82033eff67",
+      "path": "GameUE_cpp/Content/Movies/SplashScreen.mp4",
+      "size": 414512,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Content/Movies/SplashScreen.mp4",
+      "isDownloaded": 0,
+      "downloadedSize": 414512
+    },
+    "9145e6cddbb9835a6b62a075c773ff66": {
+      "hash": "138e6bd5f5a2ca03de4ae219305f8e60",
+      "path": "GameUE_cpp/Content/Paks/pakchunk0-WindowsNoEditor.pak",
+      "size": 1243921337,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Content/Paks/pakchunk0-WindowsNoEditor.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 1243921337
+    },
+    "11d085a85300a9e0c2032cbdfb0dfd20": {
+      "hash": "b7bf12a003d1a23c16d46bda201334f5",
+      "path": "GameUE_cpp/Content/Paks/pakchunk1-WindowsNoEditor.pak",
+      "size": 3869618651,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Content/Paks/pakchunk1-WindowsNoEditor.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 3869618651
+    },
+    "7c71520ed1bd3f09e25838d7a41a963b": {
+      "hash": "47b75c99271cf496ad3e168af7e0e49e",
+      "path": "GameUE_cpp/Content/Paks/pakchunk101-WindowsNoEditor.pak",
+      "size": 2128646870,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Content/Paks/pakchunk101-WindowsNoEditor.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 2128646870
+    },
+    "6bec756f4d4ebb99fce4f56408a0cfc2": {
+      "hash": "7970de28bf19e948faadf3ab49c157c4",
+      "path": "GameUE_cpp/Content/Paks/pakchunk2-WindowsNoEditor.pak",
+      "size": 1372293428,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Content/Paks/pakchunk2-WindowsNoEditor.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 1372293428
+    },
+    "0f46d5978a5ceb1941eba67ccd79e635": {
+      "hash": "9b5e5dcf3f4a5329f8d9d397139de6df",
+      "path": "GameUE_cpp/Content/Paks/pakchunk301-WindowsNoEditor.pak",
+      "size": 2193470748,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Content/Paks/pakchunk301-WindowsNoEditor.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 2193470748
+    },
+    "b2a3a06851b98b35c1673a885f884a44": {
+      "hash": "27ddbd92ebaf5ea475557cda76da1fc1",
+      "path": "GameUE_cpp/Content/Paks/pakchunk7-WindowsNoEditor.pak",
+      "size": 1997102218,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Content/Paks/pakchunk7-WindowsNoEditor.pak",
+      "isDownloaded": 0,
+      "downloadedSize": 1997102218
+    },
+    "c7bb904869545c3fac333727319ccff2": {
+      "hash": "86038065eccbb19fc6bed0c991097167",
+      "path": "GameUE_cpp/Plugins/KWSDK/Source/ThirdParty/XDPerf/Windows/x64/XDPerf.dll",
+      "size": 3518736,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/KWSDK/Source/ThirdParty/XDPerf/Windows/x64/XDPerf.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 3518736
+    },
+    "2f7d59ce1c3f0b43307c3cf5fa0751e2": {
+      "hash": "0f9daf0c99c952860e125aff602b7bb4",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/Ak3DAudioBedMixer.dll",
+      "size": 121608,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/Ak3DAudioBedMixer.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 121608
+    },
+    "41a5263fe8e9a95e85499af9d6ee81b6": {
+      "hash": "69413ce258e8c2dee030e002792f6358",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkAudioInput.dll",
+      "size": 126728,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkAudioInput.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 126728
+    },
+    "94878a15ba843757c1a2b85e0f0b04dc": {
+      "hash": "d4cb4965e102daec045cbbc919d72f84",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkCompressor.dll",
+      "size": 142600,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkCompressor.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 142600
+    },
+    "0028943db896097c07676cf099627111": {
+      "hash": "9e6a77fdf1bc6a56874e24ca8eec7990",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkDelay.dll",
+      "size": 131336,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkDelay.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 131336
+    },
+    "2ba105bbc9ff6324b463302bbfe3590b": {
+      "hash": "fd61f9df889f8b2e830866f4030c4d3e",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkExpander.dll",
+      "size": 142600,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkExpander.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 142600
+    },
+    "c9284dfc28a70cb6e177b8ff393a6d93": {
+      "hash": "6fa273928726a5560b30bf27a6987a70",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkFlanger.dll",
+      "size": 152840,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkFlanger.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 152840
+    },
+    "27c6ff6ef8615780c2c7ba1c3b3541cc": {
+      "hash": "8d62805f615b05b623ba497b24b9d02b",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkGain.dll",
+      "size": 126216,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkGain.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 126216
+    },
+    "2e12b5df1bb550d974e676a27cdfd4b0": {
+      "hash": "e8cdd23e3cd470dfd8c843309fe294d7",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkGuitarDistortion.dll",
+      "size": 165640,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkGuitarDistortion.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 165640
+    },
+    "093ba706ef92d3fc77c7f9bc9d98216b": {
+      "hash": "09ab3cf44542f8dca8d8d5a13fc0ac17",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkHarmonizer.dll",
+      "size": 230152,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkHarmonizer.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 230152
+    },
+    "ee94659b919f18754a4f078d4b429b5b": {
+      "hash": "8445c3872a0f571c90fb76213504016d",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkMatrixReverb.dll",
+      "size": 192264,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkMatrixReverb.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 192264
+    },
+    "70f06c7474c2a3f9848bbd9941bad2b2": {
+      "hash": "73875fe6446517cc0d835d431ce04007",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkParametricEQ.dll",
+      "size": 154376,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkParametricEQ.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 154376
+    },
+    "91f7e40bf3512b897bb105e4cbef583f": {
+      "hash": "9a157e524e12231092fc8769ffd1478d",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkPeakLimiter.dll",
+      "size": 133896,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkPeakLimiter.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 133896
+    },
+    "da6c085290f2a54e6ecefc0eff9ffe31": {
+      "hash": "1d7ec36325544062356cd2683f65aac2",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkPitchShifter.dll",
+      "size": 160008,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkPitchShifter.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 160008
+    },
+    "2acb4b2964d8a45aba7e743d87b70de8": {
+      "hash": "b7363c5931fabfacf145fe737e96c4e9",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkRecorder.dll",
+      "size": 127240,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkRecorder.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 127240
+    },
+    "0a0c7c784ee5e58665f6a52f88736e2e": {
+      "hash": "05ccd4485a25c64fff4fed7e4192a46c",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkReflect.dll",
+      "size": 198408,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkReflect.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 198408
+    },
+    "c61cdd073eb26baa9d2ca1c8d80b3147": {
+      "hash": "f332120a147a22986448d6eb51613c03",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkRoomVerb.dll",
+      "size": 241928,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkRoomVerb.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 241928
+    },
+    "0c4b66ccf56aede4adb69528fcd98c2f": {
+      "hash": "8a710ca05082ec9f7905811e7da19846",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkSilenceGenerator.dll",
+      "size": 118024,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkSilenceGenerator.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 118024
+    },
+    "a165b3a7c4efd14facb7d6cf5b9f8337": {
+      "hash": "1868bdf63bc8f3d2e51604e0509e5052",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkSineTone.dll",
+      "size": 126728,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkSineTone.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 126728
+    },
+    "f8128246d25ee7493af00eeb98769842": {
+      "hash": "370bc9334538a10d11d93c3d41f38931",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkSoundEngineDLL.dll",
+      "size": 1788168,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkSoundEngineDLL.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 1788168
+    },
+    "b217802f0f6b82f8855e94a5bf14d68a": {
+      "hash": "e43ca5af3750f706b86b569972ab155b",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkSoundSeedAir.dll",
+      "size": 195848,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkSoundSeedAir.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 195848
+    },
+    "4210af3ab2ea6e8ad066eed1f8dfcda7": {
+      "hash": "052708dc4c841072e5030b4028d31904",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkStereoDelay.dll",
+      "size": 167176,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkStereoDelay.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 167176
+    },
+    "159b6a1b4534878d291c805f56e75f84": {
+      "hash": "90a5450ca4183b7baa4f1f1b683bb7f5",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkSynthOne.dll",
+      "size": 171272,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkSynthOne.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 171272
+    },
+    "e9749bee5104f752d9ca324b0201ba9a": {
+      "hash": "a8a3322813bade14df8ad93a2f505c98",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkTimeStretch.dll",
+      "size": 236808,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkTimeStretch.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 236808
+    },
+    "467c4697c7af84873748c3a60ff5d046": {
+      "hash": "72a763f51c4b0f1b234faeead01e1b59",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkToneGen.dll",
+      "size": 146696,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkToneGen.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 146696
+    },
+    "ddbbbbfdbbd4b9998f65d94506197b09": {
+      "hash": "7e07a0a1ca197ef1a0a64a8b3371d5c4",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkTremolo.dll",
+      "size": 150792,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/AkTremolo.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 150792
+    },
+    "0f7b7c292dcef92707651cc8890a320f": {
+      "hash": "d01a27d60e86db95f538d037ace4e057",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/Auro.dll",
+      "size": 2560776,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/Auro.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 2560776
+    },
+    "3a7edf502072c192a9edb7e6271a5a96": {
+      "hash": "10ecfebecbc2af9320ccaeafa9af58ef",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/iZotope.dll",
+      "size": 570632,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/iZotope.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 570632
+    },
+    "3d7c2b20ea0c47bd5bb0a2beb55e8bfc": {
+      "hash": "d3c26369cae0052ddbc909bcbda5bc53",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/MasteringSuite.dll",
+      "size": 250632,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/MasteringSuite.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 250632
+    },
+    "4bbe3b364c974255a3200e91bae449c9": {
+      "hash": "7e02d084d9eb5d40a4a1aaea6b53e35f",
+      "path": "GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/McDSP.dll",
+      "size": 309000,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/Wwise/ThirdParty/x64_vc160/Release/bin/McDSP.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 309000
+    },
+    "7a18062e74cce6f672b043c993b401cb": {
+      "hash": "e7e385e0cdc1fbae4dba4cd600d1309f",
+      "path": "GameUE_cpp/Plugins/XDGCommon/Content/XDGAssets/Agreement_local_cn.json",
+      "size": 1487,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/XDGCommon/Content/XDGAssets/Agreement_local_cn.json",
+      "isDownloaded": 0,
+      "downloadedSize": 1487
+    },
+    "8e21baf7065a23a03dbc619154366404": {
+      "hash": "bfaeef41fc652954ab36105884747c10",
+      "path": "GameUE_cpp/Plugins/XDGCommon/Content/XDGAssets/Agreement_local_df.json",
+      "size": 24595,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/XDGCommon/Content/XDGAssets/Agreement_local_df.json",
+      "isDownloaded": 0,
+      "downloadedSize": 24595
+    },
+    "778b1a159cfcf0de899013a20e2ec2ab": {
+      "hash": "f664a2ff61e3fefc6ac01a30f1b9e3d2",
+      "path": "GameUE_cpp/Plugins/XDGCommon/Content/XDGAssets/Agreement_local_kr.json",
+      "size": 1580,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/XDGCommon/Content/XDGAssets/Agreement_local_kr.json",
+      "isDownloaded": 0,
+      "downloadedSize": 1580
+    },
+    "da8987a2ab40c5c43f0f77929bb74710": {
+      "hash": "fdc321c85e1544237e3c97719f115280",
+      "path": "GameUE_cpp/Plugins/XDGCommon/Content/XDGAssets/Language.json",
+      "size": 153478,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/XDGCommon/Content/XDGAssets/Language.json",
+      "isDownloaded": 0,
+      "downloadedSize": 153478
+    },
+    "e4a946f709524682fca81e04838b2b09": {
+      "hash": "5d8f14a7db906b557c8c0b1cffc6352d",
+      "path": "GameUE_cpp/Plugins/XDThemis/ThirdParty/Win64/themis_x64.dll",
+      "size": 16245008,
+      "url": "https://etheria-static.xdcdn.com/sa_cbt4/0.8/Windows/3083120/309402/GameUE_cpp/Plugins/XDThemis/ThirdParty/Win64/themis_x64.dll",
+      "isDownloaded": 0,
+      "downloadedSize": 16245008
+    }
+  }
+}
