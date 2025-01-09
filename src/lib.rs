@@ -66,7 +66,7 @@ impl Deref for FileHelper {
 impl FileHelper {
     const STYLE: &str = r"{spinner:.green} {file_name:40} [{elapsed_precise}] [{bar:40.cyan/blue}] {bytes}/{total_bytes}";
 
-    pub fn new(inner: FileInner) -> Result<Self> {
+    pub fn new(inner: FileInner) -> Self {
         let FileInner { path, size, .. } = &inner;
 
         let pb = ProgressBar::new(*size);
@@ -78,19 +78,19 @@ impl FileHelper {
             _ => format!("{}...", &file_name[..36]),
         };
 
-        pb.set_style(
-            ProgressStyle::with_template(Self::STYLE)?
-                .with_key("file_name", move |_: &ProgressState, w: &mut dyn Write| {
-                    write!(w, "{file_name}").unwrap()
-                })
-                .progress_chars("##-"),
-        );
+        let style = ProgressStyle::with_template(Self::STYLE)
+            .unwrap()
+            .with_key("file_name", move |_: &ProgressState, w: &mut dyn Write| {
+                write!(w, "{file_name}").unwrap()
+            })
+            .progress_chars("##-");
 
-        Ok(Self { inner, pb })
+        pb.set_style(style);
+        Self { inner, pb }
     }
 
     pub async fn download(&mut self) -> Result<()> {
-        while match self.verify() {
+        while match self.verify().await {
             Ok(downloaded) => !downloaded,
             Err(_) => true,
         } {
@@ -114,8 +114,8 @@ impl FileHelper {
         Ok(self.pb.finish())
     }
 
-    fn verify(&self) -> Result<bool> {
-        let mut file = fs::File::open(&self.path)?;
+    async fn verify(&self) -> Result<bool> {
+        let mut file = File::open(&self.path).await?.into_std().await;
         let mut hasher = Md5::new();
 
         io::copy(&mut file, &mut hasher)?;

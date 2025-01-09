@@ -17,7 +17,7 @@ async fn main() -> Result<()> {
 
     for inner in files.into_values() {
         let threads = Arc::clone(&threads);
-        let mut helper = FileHelper::new(inner)?;
+        let mut helper = FileHelper::new(inner);
 
         while {
             time::sleep(Duration::from_millis(1)).await;
@@ -36,13 +36,19 @@ async fn main() -> Result<()> {
         helper.pb = mp.add(helper.pb);
 
         handles.push(tokio::spawn(async move {
-            helper.download().await?;
-            Result::Ok(*threads.lock().await += 1)
+            let mut result;
+
+            while {
+                result = helper.download().await;
+                result.is_err()
+            } {}
+
+            *threads.lock().await += 1;
         }));
     }
 
     for handle in handles {
-        handle.await??;
+        handle.await?;
     }
 
     Ok({
