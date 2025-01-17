@@ -17,8 +17,7 @@ async fn main() -> Result<()> {
         let mp = mp.clone();
 
         handles.push(tokio::spawn(async move {
-            let mut helper = FileHelper::new(inner);
-            helper.pb = mp.add(helper.pb);
+            let helper = FileHelper::new(inner).with_multi_progress(mp);
 
             while helper.download().await.is_err() {}
             pool.dettach().await;
@@ -29,10 +28,8 @@ async fn main() -> Result<()> {
         handle.await?;
     }
 
-    Ok({
-        println!("All the resources are downloaded!");
-        println!("Press any key to continue...");
+    println!("All the resources are downloaded!");
+    println!("Press any key to continue...");
 
-        Term::read_key(&Term::stdout())?;
-    })
+    Ok(Term::stdout().read_key().map(|_| ())?)
 }

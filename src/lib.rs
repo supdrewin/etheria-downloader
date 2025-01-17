@@ -1,14 +1,18 @@
 use std::{
-    collections::HashMap, error::Error, fmt::Write, fs, io, ops::Deref, path::Path, sync::Arc,
+    collections::HashMap, error::Error, fmt::Write, io, ops::Deref, path::Path, sync::Arc,
     time::Duration,
 };
 
-use base16ct::lower;
 use futures_util::StreamExt;
-use indicatif::{ProgressBar, ProgressState, ProgressStyle};
+use indicatif::{MultiProgress, ProgressBar, ProgressState, ProgressStyle};
 use md5::{Digest, Md5};
 use serde::{Deserialize, Serialize};
-use tokio::{fs::File, io::AsyncWriteExt, sync::Mutex, time};
+use tokio::{
+    fs::{self, File},
+    io::AsyncWriteExt,
+    sync::Mutex,
+    time,
+};
 
 pub type Result<T> = std::result::Result<T, Box<dyn Error + Send + Sync>>;
 
@@ -54,8 +58,8 @@ pub struct FileInner {
 }
 
 pub struct FileHelper {
-    pub pb: ProgressBar,
     inner: FileInner,
+    pb: ProgressBar,
 }
 
 #[derive(Clone)]
@@ -105,24 +109,29 @@ impl FileHelper {
         Self { inner, pb }
     }
 
-    pub async fn download(&mut self) -> Result<()> {
+    pub fn with_multi_progress(self, mp: MultiProgress) -> Self {
+        let Self { inner, pb } = self;
+
+        let pb = mp.add(pb);
+        Self { inner, pb }
+    }
+
+    pub async fn download(&self) -> Result<()> {
+        let path = Path::new(&self.path);
+
+        fs::create_dir_all(path.parent().unwrap()).await?;
+
         while match self.verify().await {
             Ok(downloaded) => !downloaded,
             Err(_) => true,
         } {
-            let path = Path::new(&self.path);
-
-            fs::create_dir_all(path.parent().unwrap())?;
             self.pb.set_position(0);
 
             let mut file = File::create(path).await?;
             let mut stream = reqwest::get(&self.url).await?.bytes_stream();
 
             while let Some(chunk) = stream.next().await {
-                let chunk = chunk?;
-
-                file.write_all(&chunk).await?;
-                self.pb.inc(chunk.len() as u64);
+                self.write_bytes(&mut file, &chunk?).await?;
             }
 
             file.flush().await?;
@@ -130,21 +139,27 @@ impl FileHelper {
 
         Ok(self.pb.finish())
     }
+}
 
+impl FileHelper {
     async fn verify(&self) -> Result<bool> {
         let mut file = File::open(&self.path).await?.into_std().await;
         let mut hasher = Md5::new();
 
-        self.pb.enable_steady_tick(Duration::from_millis(20));
         self.pb.set_position(self.size);
+        self.pb.enable_steady_tick(Duration::from_millis(20));
 
         io::copy(&mut file, &mut hasher)?;
 
         let hash = hasher.finalize();
-        let hash = lower::encode_string(&hash);
-
         self.pb.disable_steady_tick();
-        Ok(hash.eq(&self.hash))
+
+        Ok(format!("{hash:02x}").eq(&self.hash))
+    }
+
+    async fn write_bytes(&self, file: &mut File, chunk: &[u8]) -> Result<()> {
+        file.write_all(&chunk).await?;
+        Ok(self.pb.inc(chunk.len() as u64))
     }
 }
 
