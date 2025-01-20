@@ -1,4 +1,6 @@
-use super::{Result, VersionFiles, VERSION_FILES_JSON};
+use super::{VersionFiles, VERSION_FILES_JSON};
+
+use wuwa_dl::utils::Result;
 
 #[test]
 fn version_files() -> Result<()> {

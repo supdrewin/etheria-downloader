@@ -1,6 +1,6 @@
 [package]
 name = "etheria-downloader"
-version = "0.6.0"
+version = "0.7.0"
 authors = ["Alvin Null <supdrewin@outlook.com>"]
 edition = "2021"
 description = "Etheria Downloader written in Rust"
@@ -10,10 +10,11 @@ license = "MIT"
 [dependencies]
 console = "0.15"
 futures-util = "0.3"
-indicatif = "0.17"
+indicatif = { git = "https://github.com/console-rs/indicatif" }
 md-5 = "0.10"
-num_cpus = "1.16"
 reqwest = { version = "0.12", features = ["stream"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 tokio = { version = "1.42", features = ["full"] }
+wuwa-dl = { git = "https://github.com/supdrewin/wuwa-downloader" }
+wuwa-macro-derive = { git = "https://github.com/supdrewin/wuwa-downloader" }

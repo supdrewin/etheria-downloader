@@ -1,35 +1,43 @@
 use console::Term;
 use indicatif::MultiProgress;
+use tokio::runtime::Builder;
+use wuwa_dl::{
+    pool::{Pool, PoolOp},
+    utils::Result,
+};
 
-use etheria_downloader::{FileHelper, Pool, Result, VersionFiles, VERSION_FILES_JSON};
+use etheria_downloader::{FileHelper, VersionFiles, VERSION_FILES_JSON};
 
-#[tokio::main]
-async fn main() -> Result<()> {
+fn main() -> Result<()> {
     let VersionFiles { files, .. } = serde_json::from_str(VERSION_FILES_JSON)?;
 
-    let pool = Pool::new(num_cpus::get());
+    let rt = Builder::new_multi_thread().enable_all().build()?;
     let mp = MultiProgress::new();
 
-    let mut handles = vec![];
+    rt.block_on(async {
+        let mut pool = Pool::new()?;
+        let mut tasks = vec![];
 
-    for inner in files.into_values() {
-        let pool = pool.attach().await;
-        let mp = mp.clone();
+        for (_, inner) in files {
+            let sender = pool.sender.clone();
+            let mp = mp.clone();
 
-        handles.push(tokio::spawn(async move {
-            let helper = FileHelper::new(inner).with_multi_progress(mp);
+            pool.watcher.changed().await?;
+            sender.send(PoolOp::Attach).await?;
 
-            while helper.download().await.is_err() {}
-            pool.dettach().await;
-        }));
-    }
+            tasks.push(tokio::spawn(async move {
+                let helper = FileHelper::new(inner).with_multi_progress(mp);
 
-    for handle in handles {
-        handle.await?;
-    }
+                wuwa_dl::while_err! { helper.download().await }
+                sender.send(PoolOp::Dettach).await
+            }));
+        }
 
-    println!("All the resources are downloaded!");
-    println!("Press any key to continue...");
+        wuwa_dl::wait_all!(tasks, 2);
 
-    Ok(Term::stdout().read_key().map(|_| ())?)
+        println!("All the resources are downloaded!");
+        println!("Press any key to continue...");
+
+        Ok(Term::stdout().read_key().map(|_| ())?)
+    })
 }

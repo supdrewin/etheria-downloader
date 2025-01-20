@@ -1,7 +1,4 @@
-use std::{
-    collections::HashMap, error::Error, fmt::Write, io, ops::Deref, path::Path, sync::Arc,
-    time::Duration,
-};
+use std::{collections::HashMap, fmt::Write, io, ops::Deref, path::Path, time::Duration};
 
 use futures_util::StreamExt;
 use indicatif::{MultiProgress, ProgressBar, ProgressState, ProgressStyle};
@@ -10,11 +7,8 @@ use serde::{Deserialize, Serialize};
 use tokio::{
     fs::{self, File},
     io::AsyncWriteExt,
-    sync::Mutex,
-    time,
 };
-
-pub type Result<T> = std::result::Result<T, Box<dyn Error + Send + Sync>>;
+use wuwa_dl::utils::Result;
 
 pub const VERSION_FILES_JSON: &str = include_str!("../assets/version_files_309402.json");
 
@@ -62,11 +56,6 @@ pub struct FileHelper {
     pb: ProgressBar,
 }
 
-#[derive(Clone)]
-pub struct Pool {
-    count: Arc<Mutex<usize>>,
-}
-
 impl Deref for FileHelper {
     type Target = FileInner;
 
@@ -75,17 +64,7 @@ impl Deref for FileHelper {
     }
 }
 
-impl Deref for Pool {
-    type Target = Arc<Mutex<usize>>;
-
-    fn deref(&self) -> &Self::Target {
-        &self.count
-    }
-}
-
 impl FileHelper {
-    const STYLE: &str = r"{spinner:.green} {file_name:40} [{elapsed_precise}] [{bar:40.cyan/blue}] {bytes}/{total_bytes}";
-
     pub fn new(inner: FileInner) -> Self {
         let FileInner { path, size, .. } = &inner;
 
@@ -142,6 +121,8 @@ impl FileHelper {
 }
 
 impl FileHelper {
+    const STYLE: &str = r"{spinner:.green} {file_name:40} [{elapsed_precise}] [{bar:40.cyan/blue}] {bytes}/{total_bytes}";
+
     async fn verify(&self) -> Result<bool> {
         let mut file = File::open(&self.path).await?.into_std().await;
         let mut hasher = Md5::new();
@@ -160,37 +141,6 @@ impl FileHelper {
     async fn write_bytes(&self, file: &mut File, chunk: &[u8]) -> Result<()> {
         file.write_all(&chunk).await?;
         Ok(self.pb.inc(chunk.len() as u64))
-    }
-}
-
-impl Pool {
-    pub fn new(count: usize) -> Self {
-        let count = Arc::new(Mutex::new(count));
-        Self { count }
-    }
-
-    pub async fn attach(&self) -> Self {
-        let pool = self.clone();
-
-        while {
-            time::sleep(Duration::from_millis(20)).await;
-
-            let mut count = pool.lock().await;
-            let status = count.checked_sub(1);
-
-            match status {
-                Some(c) => *count = c,
-                None => (),
-            }
-
-            status.is_none()
-        } {}
-
-        pool
-    }
-
-    pub async fn dettach(&self) {
-        *self.lock().await += 1;
     }
 }
 
