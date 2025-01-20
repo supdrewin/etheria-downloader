@@ -25,7 +25,7 @@ fn main() -> Result<()> {
             pool.watcher.changed().await?;
             sender.send(PoolOp::Attach).await?;
 
-            tasks.push(tokio::spawn(async move {
+            tasks.push(rt.spawn(async move {
                 let helper = FileHelper::new(inner).with_multi_progress(mp);
 
                 wuwa_dl::while_err! { helper.download().await }
