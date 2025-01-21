@@ -2,6 +2,7 @@ use console::Term;
 use indicatif::MultiProgress;
 use tokio::runtime::Builder;
 use wuwa_dl::{
+    helper::ResourceHelperExt,
     pool::{Pool, PoolOp},
     utils::Result,
 };
@@ -26,7 +27,9 @@ fn main() -> Result<()> {
             sender.send(PoolOp::Attach).await?;
 
             tasks.push(rt.spawn(async move {
-                let helper = FileHelper::new(inner).with_multi_progress(mp);
+                let helper = FileHelper::new(inner)
+                    .with_progress_bar()
+                    .with_multi_progress(mp);
 
                 wuwa_dl::while_err! { helper.download().await }
                 sender.send(PoolOp::Dettach).await

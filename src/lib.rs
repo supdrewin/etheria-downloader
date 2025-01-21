@@ -1,14 +1,12 @@
-use std::{collections::HashMap, fmt::Write, io, ops::Deref, path::Path, time::Duration};
+use std::{collections::HashMap, fmt::Write, path::Path};
 
-use futures_util::StreamExt;
 use indicatif::{MultiProgress, ProgressBar, ProgressState, ProgressStyle};
-use md5::{Digest, Md5};
 use serde::{Deserialize, Serialize};
-use tokio::{
-    fs::{self, File},
-    io::AsyncWriteExt,
+
+use wuwa_dl::{
+    helper::{ResourceHelperBase, ResourceHelperExt},
+    utils::PROGRESS_STYLE,
 };
-use wuwa_dl::utils::Result;
 
 pub const VERSION_FILES_JSON: &str = include_str!("../assets/version_files_309402.json");
 
@@ -53,23 +51,43 @@ pub struct FileInner {
 
 pub struct FileHelper {
     inner: FileInner,
-    pb: ProgressBar,
+    pb: Option<ProgressBar>,
 }
 
-impl Deref for FileHelper {
-    type Target = FileInner;
+impl ResourceHelperBase for FileHelper {
+    fn md5(&self) -> &str {
+        &self.inner.hash
+    }
 
-    fn deref(&self) -> &Self::Target {
-        &self.inner
+    fn size(&self) -> u64 {
+        self.inner.size
+    }
+
+    fn download_src(&self) -> &str {
+        &self.inner.url
+    }
+
+    fn download_dest(&self) -> &Path {
+        Path::new(&self.inner.path)
+    }
+
+    fn pb(&self) -> &Option<ProgressBar> {
+        &self.pb
     }
 }
 
+impl ResourceHelperExt for FileHelper {}
+
 impl FileHelper {
     pub fn new(inner: FileInner) -> Self {
-        let FileInner { path, size, .. } = &inner;
+        Self { inner, pb: None }
+    }
 
-        let pb = ProgressBar::new(*size);
-        let path = Path::new(path);
+    pub fn with_progress_bar(self) -> Self {
+        let Self { inner, .. } = self;
+
+        let pb = ProgressBar::new(inner.size);
+        let path = Path::new(&inner.path);
 
         let file_name = path.file_name().unwrap().to_str().unwrap();
         let file_name = match file_name.len() {
@@ -77,7 +95,7 @@ impl FileHelper {
             _ => format!("{}...", &file_name[..36]),
         };
 
-        let style = ProgressStyle::with_template(Self::STYLE)
+        let style = ProgressStyle::with_template(PROGRESS_STYLE)
             .unwrap()
             .with_key("file_name", move |_: &ProgressState, w: &mut dyn Write| {
                 write!(w, "{file_name}").unwrap()
@@ -85,62 +103,16 @@ impl FileHelper {
             .progress_chars("##-");
 
         pb.set_style(style);
-        Self { inner, pb }
+
+        Self {
+            inner,
+            pb: Some(pb),
+        }
     }
 
     pub fn with_multi_progress(self, mp: MultiProgress) -> Self {
-        let Self { inner, pb } = self;
-
-        let pb = mp.add(pb);
-        Self { inner, pb }
-    }
-
-    pub async fn download(&self) -> Result<()> {
-        let path = Path::new(&self.path);
-
-        fs::create_dir_all(path.parent().unwrap()).await?;
-
-        while match self.verify().await {
-            Ok(downloaded) => !downloaded,
-            Err(_) => true,
-        } {
-            self.pb.set_position(0);
-
-            let mut file = File::create(path).await?;
-            let mut stream = reqwest::get(&self.url).await?.bytes_stream();
-
-            while let Some(chunk) = stream.next().await {
-                self.write_bytes(&mut file, &chunk?).await?;
-            }
-
-            file.flush().await?;
-        }
-
-        Ok(self.pb.finish())
-    }
-}
-
-impl FileHelper {
-    const STYLE: &str = r"{spinner:.green} {file_name:40} [{elapsed_precise}] [{bar:40.cyan/blue}] {bytes}/{total_bytes}";
-
-    async fn verify(&self) -> Result<bool> {
-        let mut file = File::open(&self.path).await?.into_std().await;
-        let mut hasher = Md5::new();
-
-        self.pb.set_position(self.size);
-        self.pb.enable_steady_tick(Duration::from_millis(20));
-
-        io::copy(&mut file, &mut hasher)?;
-
-        let hash = hasher.finalize();
-        self.pb.disable_steady_tick();
-
-        Ok(format!("{hash:02x}").eq(&self.hash))
-    }
-
-    async fn write_bytes(&self, file: &mut File, chunk: &[u8]) -> Result<()> {
-        file.write_all(&chunk).await?;
-        Ok(self.pb.inc(chunk.len() as u64))
+        let pb = self.pb.and_then(|pb| Some(mp.add(pb)));
+        Self { pb, ..self }
     }
 }
 
