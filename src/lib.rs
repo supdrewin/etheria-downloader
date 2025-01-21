@@ -54,26 +54,17 @@ pub struct FileHelper {
     pb: Option<ProgressBar>,
 }
 
+#[rustfmt::skip]
 impl ResourceHelperBase for FileHelper {
-    fn md5(&self) -> &str {
-        &self.inner.hash
-    }
+    fn md5(&self) -> &str { &self.inner.hash }
 
-    fn size(&self) -> u64 {
-        self.inner.size
-    }
+    fn size(&self) -> u64 { self.inner.size }
 
-    fn download_src(&self) -> &str {
-        &self.inner.url
-    }
+    fn download_src(&self) -> &str { &self.inner.url }
 
-    fn download_dest(&self) -> &Path {
-        Path::new(&self.inner.path)
-    }
+    fn download_dest(&self) -> &Path { Path::new(&self.inner.path) }
 
-    fn pb(&self) -> &Option<ProgressBar> {
-        &self.pb
-    }
+    fn pb(&self) -> &Option<ProgressBar> { &self.pb }
 }
 
 impl ResourceHelperExt for FileHelper {}
